@@ -101,6 +101,15 @@ const SKILLS: Skill[] = [
     category: "AI",
   },
   {
+    name: "Scraping & Automation",
+    stack: [
+      { src: "/skills/firecrawl.png" },
+      { src: "/skills/browserbase.png" },
+      { src: "/skills/apify.svg" },
+    ],
+    category: "Data",
+  },
+  {
     name: "Git & GitHub",
     stack: [
       { src: "/skills/git.svg" },
@@ -109,8 +118,11 @@ const SKILLS: Skill[] = [
     category: "Version Control",
   },
   {
-    name: "Tailwind CSS",
-    icon: { src: "/skills/tailwind.svg" },
+    name: "Tailwind & shadcn/ui",
+    stack: [
+      { src: "/skills/tailwind.svg" },
+      { src: "/skills/shadcnui.svg", invertDark: true },
+    ],
     category: "Styling",
   },
   {

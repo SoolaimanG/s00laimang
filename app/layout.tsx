@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "s00laiman.g — Full-stack Software Engineer",
+  title: "s00laimang — Full-stack Software Engineer",
   description:
     "Full-stack engineer building askOga, Payfrica, Kinta SME, Resellos, and more.",
   icons: {

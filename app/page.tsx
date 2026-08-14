@@ -88,7 +88,7 @@ export default function Home() {
           />
           <div>
             <h1 className="flex items-center gap-1.5 font-serif text-xl leading-tight tracking-tight">
-              s00laiman.g
+              s00laimang
               <svg
                 aria-label="Verified"
                 viewBox="0 0 24 24"
