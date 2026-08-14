@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf8f5;
+  --foreground: #21201c;
+  --muted: #6f6b63;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-louize);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #131211;
+    --foreground: #ece9e4;
+    --muted: #97928a;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* floating player: drawer-style enter through the bottom, symmetric exit */
+.player-pop {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  transition:
+    transform 0.4s cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@starting-style {
+  .player-pop {
+    transform: translateX(-50%) translateY(calc(100% + 16px));
+    opacity: 0;
+  }
+}
+
+.player-pop.player-closing {
+  transform: translateX(-50%) translateY(calc(100% + 16px));
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player-pop {
+    transition: opacity 0.2s ease;
+  }
+
+  @starting-style {
+    .player-pop {
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  .player-pop.player-closing {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .eq-bars span {
+    animation: none !important;
+    height: 70%;
+  }
+}
+
+/* expanding skill rows: staggered fade-and-rise entrance */
+.skill-enter {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.25s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: var(--enter-delay, 0s);
+}
+
+@starting-style {
+  .skill-enter {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-enter {
+    transition: opacity 0.2s ease;
+  }
+
+  @starting-style {
+    .skill-enter {
+      transform: none;
+    }
+  }
+}
+
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--foreground) 25%, transparent)
+    transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--foreground) 25%, transparent);
+  border-radius: 999px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}

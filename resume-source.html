@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face {
+    font-family: "Louize";
+    src: url("file:///C:/Users/SULEI/OneDrive/Desktop/Personal/s00laimang.com/app/fonts/LouizeDisplay.ttf");
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 210mm; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: #1c1b18;
+    font-size: 8.8pt;
+    line-height: 1.32;
+    padding: 8mm 12mm 4mm;
+  }
+  .muted { color: #6f6b63; }
+  a { color: inherit; text-decoration: none; }
+
+  header h1 {
+    font-family: "Louize", serif;
+    font-size: 24pt;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+  }
+  .role { font-size: 10.2pt; margin-top: 1mm; color: #44413b; }
+  .contact { margin-top: 1.6mm; font-size: 8.6pt; color: #6f6b63; }
+  .contact b { color: #1c1b18; font-weight: 500; }
+
+  .summary { margin-top: 2.8mm; font-size: 8.9pt; color: #33312c; }
+
+  h2 {
+    font-family: "Louize", serif;
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 0.3px;
+    margin: 3.4mm 0 1.5mm;
+    padding-bottom: 0.8mm;
+    border-bottom: 0.5pt solid #d8d4cc;
+  }
+
+  .entry { margin-bottom: 2.2mm; }
+  .entry-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry-head .title { font-weight: 600; font-size: 9.7pt; }
+  .entry-head .title .co { font-weight: 500; color: #44413b; }
+  .entry-head .dates { font-size: 8.6pt; color: #6f6b63; white-space: nowrap; }
+  .entry .sub { font-size: 8.8pt; color: #6f6b63; margin-top: 0.4mm; }
+  ul { margin-top: 0.8mm; padding-left: 4mm; }
+  li { margin-bottom: 0.5mm; }
+  li::marker { color: #a09a8e; }
+
+  .skills p { margin-bottom: 0.7mm; }
+  .skills b { font-weight: 600; }
+
+  .edu { display: flex; justify-content: space-between; align-items: baseline; }
+  footer {
+    margin-top: 2.5mm;
+    font-size: 8.4pt;
+    color: #a09a8e;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Suleiman Gitsu Abubakar</h1>
+    <p class="role">Full-stack Engineer &middot; AI/LLM Systems</p>
+    <p class="contact">
+      Minna / Abuja, Nigeria &nbsp;&bull;&nbsp; +234 706 821 4943 &nbsp;&bull;&nbsp;
+      <b>s00laimang@icloud.com</b> &nbsp;&bull;&nbsp; <b>s00laimang.com</b> &nbsp;&bull;&nbsp;
+      github.com/SoolaimanG &nbsp;&bull;&nbsp; x.com/s00laimang
+    </p>
+  </header>
+
+  <p class="summary">
+    Full-stack engineer building realtime multiplayer games with in-game voice chat, Sui blockchain
+    integrations, production RAG pipelines, and conversational commerce on WhatsApp. Ships in
+    Next.js and TypeScript, and founds, builds, and self-hosts products for African markets —
+    2,900+ GitHub contributions in the last year. Computer Engineering graduate (B.Eng), FUT Minna.
+  </p>
+
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="title">Full-stack Developer <span class="co">&middot; Voultron Games</span></span>
+      <span class="dates">2025 – Present</span>
+    </div>
+    <p class="sub">Play-to-earn gaming on the Sui blockchain</p>
+    <ul>
+      <li>Built <b>Panther Wheel</b>, Voultron's realtime multiplayer play-to-earn game, from gameplay
+        logic and interface design through production deployment — passed 500 plays within two months
+        of mainnet launch.</li>
+      <li>Engineered live multiplayer sessions with in-game voice chat on LiveKit (WebRTC), keeping
+        gameplay state in sync across players.</li>
+      <li>Integrated the Sui blockchain into gameplay: wallet connections, on-chain transactions, and
+        smart-contract game rewards.</li>
+      <li>Optimized load times, rendering, and state sync, and iterated on the UI to improve the game feel.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="title">Freelance Full-stack Developer <span class="co">&middot; Remote</span></span>
+      <span class="dates">2024 – Present</span>
+    </div>
+    <ul>
+      <li><b>Payfrica</b> (payfrica.xyz) — frontend developer on a non-custodial crypto-to-fiat platform on
+        Sui, Base, and Avalanche: cash out stablecoins to Naira in seconds, buy airtime and data with
+        crypto, and send money via shareable fiat voucher links. $10K+ in settled volume.</li>
+      <li><b>Kinta SME</b> (kinta-sme.com) — founder of an automated VTU and bill-payments platform: data
+        and airtime across MTN, Airtel, Glo, and 9mobile, electricity tokens for major DisCos, and
+        WAEC/NECO/JAMB result checking, with wallet funding and 24/7 automated delivery.</li>
+      <li><b>Resellos</b> (resellos.site) — white-label storefront builder that lets anyone launch their own
+        branded VTU website in minutes, running on the Kinta SME rails.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="title">Loota <span class="co">&middot; Co-founder &amp; Engineer</span></span>
+      <span class="dates">2025 – Present</span>
+    </div>
+    <p class="sub">AI product discovery over WhatsApp &amp; Instagram — loota.site</p>
+    <ul>
+      <li>Conversational commerce for hyperlocal product discovery in Nigerian markets: users find and
+        compare local products inside WhatsApp, with escrow-protected deals.</li>
+      <li>Built a production RAG pipeline — Supabase pgvector retrieval, Cohere embeddings and
+        rerank-v3.5, YAML-serialized product objects for structured LLM context.</li>
+      <li>Engineered WhatsApp-native delivery: chunked message streaming through Kapso, tone-controlled
+        system prompts, Meta Business verification and template management; Apify ingestion, Upstash
+        Redis caching and rate-limiting, Dojah/Prembly KYC.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="title">askOga <span class="co">&middot; AI content director</span></span>
+      <span class="dates">2026 – Present</span>
+    </div>
+    <ul>
+      <li>Tells creators exactly what to post today — writes the script, the shots, and the caption, so
+        they just hit record.</li>
+      <li>Media annotation pipeline on Bun, grammY, yt-dlp, Groq Whisper transcription, and Supabase,
+        feeding a 27-field annotation schema for premise-matching and adaptation.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="title">Blockchain-Integrated Smart Metering System <span class="co">&middot; Final Year Project, FUT Minna</span></span>
+      <span class="dates">2025 – 2026</span>
+    </div>
+    <ul>
+      <li>Multi-user smart metering with ML/DL energy-theft detection and credit-depletion prediction for
+        the Nigerian grid: edge layer for meter-bypass detection, blockchain layer for tamper-proof
+        consumption records, realtime dashboard in Next.js 15 and Supabase.</li>
+    </ul>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> TypeScript, JavaScript, Python, SQL</p>
+    <p><b>Frontend:</b> Next.js 15, React, React Native, Tailwind CSS, Redux &amp; Zustand, GSAP &amp; Motion (Framer)</p>
+    <p><b>Backend &amp; Data:</b> Node.js, Bun, Django, Supabase (Postgres, pgvector, RLS), MongoDB, Convex &amp; Firebase, Drizzle &amp; Prisma, Upstash Redis</p>
+    <p><b>AI / LLM:</b> Vercel AI SDK &amp; Eve, RAG pipelines, Cohere embeddings &amp; reranking, Whisper STT, prompt engineering, evals &amp; observability</p>
+    <p><b>Realtime &amp; Web3:</b> LiveKit (WebRTC voice), Socket.IO / WebSockets, multiplayer state sync, Sui blockchain (wallets, on-chain transactions)</p>
+    <p><b>Integrations &amp; Infra:</b> WhatsApp Business API (Kapso), Telegram bots (grammY), Apify, Dojah/Prembly KYC, Vercel, Docker, Coolify, Hetzner, Git &amp; CI</p>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <span><b>B.Eng, Computer Engineering</b> &middot; Federal University of Technology, Minna</span>
+    <span class="muted">2021 – 2026</span>
+  </div>
+
+</body>
+</html>
